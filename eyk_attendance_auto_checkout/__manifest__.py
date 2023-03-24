@@ -11,7 +11,7 @@
     'data': [
         'data/scheduler.xml',
     ],
-    'license': 'MIT',
+    'license': 'Other proprietary',
     'installable': True,
     'application': True,
     'auto_install': False,
