@@ -21,7 +21,7 @@ class HrAttendance(models.Model):
                 attendance.check_out = fields.Datetime.now()
                 if auto_send_email and email_recipient:
                     employee_name = attendance.employee_id.name
-                    subject a= _("Automatic Logout from Odoo for %s" % employee_name)
+                    subject = _("Automatic Logout from Odoo for %s" % employee_name)
                     message = _("You have been automatically logged out from Odoo after %.2f hours of inactivity.<br> Please remember to check out when you finish work." % auto_checkout_time)
                     mail_dict = {
                                  "subject": subject,
